@@ -49,3 +49,15 @@ class Student:
         print('Rest time')
         self.gladness += 5
         self.progress -= 0.1
+
+
+egor = Student('Egor')
+
+for day in range(1, 366):
+    if egor.alive:
+        egor.Live(day)
+    else:
+        print('The end!')
+        break
+else:
+    print('Game complete!')
